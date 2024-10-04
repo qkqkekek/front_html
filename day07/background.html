@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    #dog {
+      /* 문제해결 */
+      width: 70%;
+      aspect-ratio: 3 / 2;
+      /* padding-top: calc(100% / 3 * 2); */
+      /*          포지션 / 사이즈    반복      경로               */
+      background: center / 100% no-repeat url("./images/dog.jpg");
+      
+      /* 문제점 */
+      /* display: block; */
+      /* height: 300px; */
+      /* margin: 100px auto; */
+      /* background-position: center; */ 
+      /* background-size: 100%; */
+      /* background-repeat: no-repeat; */
+      /* background-image: url("./images/dog.jpg"); */
+    } 
+
+  </style>
+</head>
+<body>
+  <!-- <img id="dog" src="./images/dog.jpg" alt="강아지" /> -->
+  <div id="dog"></div>
+</body>
+</html>

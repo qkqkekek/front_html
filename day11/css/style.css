@@ -1,0 +1,324 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+          
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a,
+button {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent; }
+
+b {
+  font-weight: bold; }
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent; }
+  input::ms-clear {
+    display: none; }
+  input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+            appearance: none; }
+  input[type='number'] {
+    -moz-appearance: textfield; }
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white  inset;
+	box-shadow: 0 0 0 1000px white  inset; }
+
+input:disabled:-webkit-autofill {
+	-webkit-text-fill-color: #707070;
+	-webkit-box-shadow: 0 0 0 1000px #e8e8e8  inset;
+	box-shadow: 0 0 0 1000px #e8e8e8  inset; }
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  select::-ms-expand {
+    display: none; }
+
+textarea[name="reviewSbst"]::placeholder {
+  color: #b4b1b4;
+  font-size: 0.8125rem; }
+
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    margin: 0;
+    padding: 0; }
+
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  height: auto; }
+
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none; }
+.box-wrap {
+    display: flex;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+
+#grid-task02{
+  display: grid;
+  grid-template:
+  "img01 img02 img03 img04" 100px
+
+  "img06 img02 img03 img11" 100px
+  "img06 img08 img10 img11" 100px
+  "img07 img08 img10 img12" 100px
+  "img07 img09 img10 img12" 100px
+  / 1fr 1fr 1fr 1fr
+  ;
+  gap: 4px;
+}
+
+.img01 {
+  grid-area: img01;
+  background: url("https://cdn.pixabay.com/photo/2022/01/13/00/09/austria-6934186_1280.jpg") no-repeat center/cover;
+}
+
+.img02 {
+  grid-area: img02;
+  background: url("https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg") no-repeat center/cover;
+}
+
+.img03 {
+  grid-area: img03;
+  background: url("https://cdn.pixabay.com/photo/2023/12/15/03/11/basket-to-the-sea-8449952_640.jpg") no-repeat center/cover;
+}
+
+.img04 {
+  grid-area: img04;
+  background: url("https://cdn.pixabay.com/photo/2016/11/02/11/08/monk-1791113_640.jpg") no-repeat center/cover;
+}
+
+.img05 {
+  grid-area: img05;
+  background: url("https://cdn.pixabay.com/photo/2024/02/24/00/05/concert-hall-8593024_640.jpg") no-repeat center/cover;
+}
+
+.img06 {
+  grid-area: img06;
+  background: url("https://cdn.pixabay.com/photo/2023/10/17/09/01/seagull-8320687_640.jpg") no-repeat center/cover;
+}
+
+.img07 {
+  grid-area: img07;
+  background: url("https://cdn.pixabay.com/photo/2020/09/27/03/38/woman-5605529_640.jpg") no-repeat center/cover;
+}
+
+.img08 {
+  grid-area: img08;
+  background: url("https://cdn.pixabay.com/photo/2024/02/20/11/26/waves-8585265_640.jpg") no-repeat center/cover;
+}
+
+.img09 {
+  grid-area: img09;
+  background: url("https://cdn.pixabay.com/photo/2017/08/07/04/51/water-2600008_640.jpg") no-repeat center/cover;
+}
+
+.img10 {
+  grid-area: img10;
+  background: url("https://cdn.pixabay.com/photo/2024/07/08/05/41/girl-8880144_640.png") no-repeat center/cover;
+}
+
+.img11 {
+  grid-area: img11;
+  background: url("https://cdn.pixabay.com/photo/2023/10/19/15/18/mountains-8326967_640.jpg") no-repeat center/cover;
+}
+
+.img12 {
+  grid-area: img12;
+  background: url("https://cdn.pixabay.com/photo/2024/07/31/11/20/pattern-8934361_640.jpg") no-repeat center/cover;
+}
+
+
+@media screen and (max-width: 767px) {
+  .box-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .box {
+    width: 300px;
+    height: 300px;
+    background: green;
+  }
+  
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a-tag</title>
+</head>
+<body>
+  <!-- 절대경로 -->
+  <!-- a태그 활용 -->
+  <!--
+    target : a태그가 href를 열었을때 어떻게 열지 결정하는 속성
+    _self : 현재 페이지 (기본값)
+    _blank : 새탭
+    _perent : 부모페이지로, iframe 등이 사용된 환경에 쓰인다.
+    _top : 최상위 페이지로,  iframe 등이 사용된 환경에서 쓰인다.    
+   -->
+
+  <!-- 속성이름 = "값" 속성이름 = "값"  -->
+  <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+
+  <!-- 북마크 기능, 페이지 내 이동 -->
+  <a href="#nav">목적지로 이동</a>
+  <div id="nav2" class="" style="height: 1000px; background-color: red;">div1</div>
+  <div class="" style="height: 1000px; background-color: blue;">div2</div>
+  <div class="" style="height: 1000px; background-color: green;">div3</div>
+  <div class="" style="height: 1000px; background-color: orange;">div4</div>
+  <div id="nav">목적지</div>
+  <a href="#nav2">목적지2로 이동</a>
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* felx-task2 */
+/* .container-wrapper {
+  display: flex;
+  width: 420px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+
+#container{
+  display: flex;
+  width: min(416px, 100%);
+  flex-wrap: wrap;
+}
+
+#container .box{
+  width: 200px;
+  height: 100px;
+  margin: 4px;
+  background-color: orange;
+  box-sizing: border-box;
+} */
+
+
+/* flex-task3 */
+* {
+  box-sizing: border-box;
+  margin: 4px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  min-width: 600px;
+}
+
+.content-green {
+  width: 300px;
+  height: 200px;
+  background-color: green;
+}
+
+.content-yello {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: yellow;
+}
+
+.content-blue {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+  margin: 0 0 4px 0;
+}
+
+.content-blue:last-child {
+  margin : 0;
+}
+
+.content-pink {
+  width: 300px;
+  height: 308px;
+  background-color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-image 실습</title>
+  <style>
+    /* 
+      %, min(), max()
+      aspect-ratio, calc()
+      background
+
+      https://unsplash.com/ko 
+      이미지를 찾아서 크기를 비율에 맞게 화면에 보여주는 실습
+      1) image-wrapper 화면의 크기를 60%, 최대 크기는 1000px로 고정하기
+      2) image 화면에 비율에 맞게 background-image로 이미지를 삽입
+      13분 실습
+    */
+    #image-wrapper {
+      width: min(60%, 1000px);
+      aspect-ratio: 2141 / 3212 ;
+    }
+    .image {
+      height: 100%;
+      background-size: cover;
+      background-image: url("./images/cat.jpg");
+    }
+
+  </style>
+</head>
+<body>
+  <div id="image-wrapper">
+    <div class="image"></div>
+  </div>
+</body>
+</html>

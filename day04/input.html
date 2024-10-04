@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 태그</title>
+</head>
+<body>
+  <!-- 
+    input 태그 : 사용자로부터 데이터를 입력 받을 수 있는 태그 
+
+    input 대표 속성
+    -name : form 태그 내에서 input 속성의 이름으로 값을 찾기위한 목적으로 사용되는 속성
+    -value : 입력되는 데이터의 값
+    
+  -->
+  <p>
+    <input type="text" name="userId" placeholder="아이디를 입력하세요.">
+  </p>
+  <p>
+    <input type="password" name="userPassword" placeholder="비밀번호를 입력하세요.">
+  </p>
+
+  <form action="">
+    <fieldset>
+      <legend>학과명</legend>
+      학과명 : <input type="text" name="st_department" list="DepList">
+      <datalist id="DepList">
+        <option value="컴퓨터공학과"></option>
+        <option value="영어영문학과"></option>
+        <option value="경영학과"></option>
+        <option value="사회체육과"></option>
+      </datalist>
+    </fieldset>
+  </form>
+
+  
+  <!-- 
+    radio : 여러개 버튼 중 1개만 선택할 수 있음
+  -->
+  <form action="">
+    <fieldset>
+      <legend>성별</legend>      
+      <input type="radio" name="gender" id="button1">
+      <label for="button1">남자</label>      
+      <input type="radio" name="gender" id="button2">
+      <label for="button2">여자</label>      
+      <input type="radio" name="gender" id="button3">
+      <label for="button3">선택</label>
+    </fieldset>
+  </form>
+
+
+  <textarea style="resize: none;"></textarea>
+
+  <!-- 
+    checkbox : 여러개 버튼을 선택할 수 있음
+  -->
+  <form action="나 여기로 보낼거다">
+    <fieldset>
+      <legend>취미</legend>      
+      <label><input type="checkbox" name="hobby" value="영화감상">영화감상</label>      
+      <label><input type="checkbox" name="hobby" value="노래">노래</label>      
+      <label><input type="checkbox" name="hobby" value="볼링">볼링</label>      
+      <label><input type="checkbox" name="hobby" value="산책">산책</label>      
+      <label><input type="checkbox" name="hobby" value="게임">게임</label>      
+      <label><input type="checkbox" name="hobby" value="테니스">테니스</label>      
+    </fieldset>
+    <!-- 
+      button : 사용하여 제출한다
+      submiy : 폼의 전공 기능을 담당한다. (디폴트)
+      button : 일반적인 버튼, 흔히 자바스크립트를 이용한 기능구현에서 많이 사용한다.
+      reset : 폼 작성 내용을 초기화 하는데 사용.
+    -->
+    <button type="submit">전송</button>
+    <button type="reset">초기화</button>
+  </form>
+
+
+  <!--
+    아이콘 1번 이미지를 들고와서 
+    아이콘 1번을 클릭했을떄 파일첨부하게 만들기
+  -->
+  <p>    
+    <input type="file" id="filePlus">
+    <label for="filePlus">
+      <img src="../day03/icon1/icon4/icon01.png" style="width: 100px;">
+    </label>
+  </p>
+
+
+
+  <form action="나 여기로 보낼거다">
+    <p>색상 <input type="color"></p>
+    <p>이메일 <input type="email"></p>
+    <p>웹사이트 <input type="url"></p>
+    <p>연락처 <input type="number"></p>
+    <p>로컬날짜 <input type="datetime-local"></p>
+    <p>날짜 <input type="date"></p>
+    <p>참여인원 <input type="number" value="1"  min="0" max="100" step="5"></p>
+    <p>단계(상, 중, 하) <input type="range" value="1" min="1" max="5"></p>
+    <p>
+      <input type="submit" value="전송">
+      <input type="button" value="일반버튼">
+      <input type="reset" value="초기화">    
+    </p>
+  </form>
+
+  <!-- 회원가입 양식 -->
+  <form action="">    
+    <p>
+      아이디 <input maxlength="5" autofocus required type="text" placeholder="아이디는 영문, 숫자를 이용해서 만들어주세요">
+    </p>
+    <p>
+      비밀번호 <input type="password " placeholder="영문, 숫자, 특수문자 포함 12글자">
+    </p>
+    <button>전송</button>
+  </form>
+
+
+  
+  
+
+
+
+</body>
+</html>

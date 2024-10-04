@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+    }
+    #div1 {
+      /* margin : 100px 30px 100px 30px; */
+       /*두개 값이 일치할 때*/
+      /* margin : 100px 30px; */
+      /*모두 같을 때*/
+      margin : 100px;
+      /* auto 속성을 사용하면, 좌우 배치를 자유롭게 할 수 있다. */
+      border : solid 2px red;
+      box-sizing: border-box;
+      
+      padding : 100px;
+    }
+
+    #div2 {
+      /* margin-bottom : 80px;
+      margin-left : 100px; */
+      /* margin-top : 50px; */
+    }
+
+  </style>
+</head>
+<body>
+  <div id="div1"></div>
+  <div id="div2"></div>
+</body>
+</html>
